@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<form action="./index.html" method="get">
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name">
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" required>
+		</div>
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" id="male" name="gender" value="m" required>
 
+			<label for="female">Female</label>
+			<input type="radio" id="female" name="gender" value="f" required>
+
+			<label for="other">Other</label>
+			<input type="radio" id="other" name="gender" value="oth" required>
+
+		</div>
+		<div>
+			<label for="cars">Car Brands</label>
+			<select  id="cars">
+				<option >BMW</option>
+				<option >Audi</option>
+				<option >Mercedez</option>
+			</select>
+		</div>
+		<div>
+			<label for="carage">Car Age</label>
+			<input type="text" id="carage" required>
+		</div>
+		<div>
+			<label for="dop">Date of Purchase</label>
+			<input type="date" id="dop" required>
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" required>
+		</div>
+		
+		<input type="submit"value="submit">
+		<button type="submit">submit </button>
+	</form>
 </body>
-
 </html>
